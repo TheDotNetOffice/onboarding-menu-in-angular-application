@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About & Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            /* Fixed position */
+            width: 100%;
+            /* Full width */
+            top: 0;
+            /* Position from the top */
+            z-index: 1000;
+            /* Make sure it stays on top */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            padding: 20px;
+            margin-top: 50px;
+            /* Adjust for the height of the fixed navigation bar */
+        }
+
+        .about,
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the <a href="https://www.dotnetoffice.com/">The DotNet Office</a></h1>
+    </header>
+    <nav>
+        <a href="#home" >Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="home" (click)="startTour()" tourAnchor="home">
+            <h2>Home</h2>
+            "Welcome to the vibrant heart of <a href="https://www.dotnetoffice.com/">The DotNet Office</a> – our
+            homepage is your gateway to a world of technological exploration and innovation. As you step into our
+            digital domain, you're greeted with a seamless blend of informative content and user-friendly navigation
+            designed to cater to your every technological need.
+
+            At first glance, you'll be captivated by the sleek and modern design, reflecting our commitment to staying
+            at the forefront of digital trends. The layout is meticulously crafted to provide an intuitive browsing
+            experience, ensuring that you can effortlessly navigate through our diverse array of offerings.
+
+            As your eyes wander, you'll notice the prominent header, proudly displaying the DotNetOffice logo, a symbol
+            of our dedication to excellence in all things tech-related. Beneath it lies a dynamic navigation bar,
+            beckoning you to explore further. Here, you'll find easy access to key sections such as articles, tutorials,
+            product reviews, and our bustling community forum.
+
+            Scrolling down, you'll encounter engaging snippets of our latest and most popular content, carefully curated
+            to pique your curiosity and inspire further exploration. From thought-provoking opinion pieces to hands-on
+            tutorials and insightful industry analyses, there's something for every tech aficionado within our digital
+            repository.
+
+            But the journey doesn't end there – nestled within our homepage are interactive elements inviting you to
+            connect with us on a deeper level. Whether it's subscribing to our newsletter for exclusive updates, joining
+            our vibrant social media community, or exploring our YouTube channel for dynamic video content, there are
+            myriad ways to engage with DotNetOffice beyond just reading articles.
+
+            As you continue to delve into the depths of our homepage, you'll soon realize that it's more than just a
+            landing page – it's a digital ecosystem where technology thrives, ideas flourish, and communities unite. So,
+            whether you're a seasoned technologist, an aspiring coder, or simply a curious mind eager to unravel the
+            mysteries of the digital world, we invite you to make yourself at home here at DotNetOffice. Welcome aboard,
+            and let the adventure begin!"
+        </div>
+        <div id="about" class="about"  tourAnchor="about">
+            <h2>About Me</h2>
+            <p>"Welcome to DotNetOffice, the digital hub created by theDotnet Office for all technology enthusiasts!
+                Delve into a treasure trove of tech-related articles, where we explore everything from programming
+                languages, software development methodologies, to the latest advancements in artificial intelligence and
+                cybersecurity. Our goal is to empower readers with comprehensive insights and practical knowledge to
+                navigate the ever-evolving tech landscape.
+
+                But that's not all – accompany your reading experience with our dynamic YouTube channel. From hands-on
+                tutorials and in-depth tech reviews to thought-provoking discussions, our videos offer a
+                multi-dimensional exploration of tech topics, catering to both seasoned professionals and curious
+                beginners.
+
+                Join us at DotNetOffice as we embark on an exhilarating journey through the realms of technology. Stay
+                tuned for regular updates, engaging content, and a community-driven approach to learning and discovery.
+                Let's redefine the way we perceive and interact with technology together!"</p>
+        </div>
+        <div id="contact" class="contact"  tourAnchor="contact">
+            <h2>Contact Me</h2>
+            <p>You can contact me through the following methods:</p>
+            <ul>
+                <li>Email: example&#64;example.com</li>
+                <li>Phone: +1234567890</li>
+                <li>Social Media: <a href="https://twitter.com/TheDotNetOffice">Twitter</a>, <a
+                        href="https://www.facebook.com/TheDotNetOffice/">Facebook</a>, <a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+</body>
+
+</html>
+
+<tour-step-template></tour-step-template>
